@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Авторизация</title>
+	<link rel="stylesheet" href="../../static/styles/menu.css">
+	<link rel="stylesheet" href="../../static/styles/footer.css">
+	<link rel="stylesheet" href="../../static/styles/auto.css">
+</head>
+<body  style="background-color: #F9F9F9;">
+	<header>
+
+		<a href="/" class="logo"><img width="200" height="46" src="../../static/image/logotype.svg" alt="Гусевской хрустальный завод"></a>
+
+		<nav>
+			<ul>
+				<li><a href="/about_us">О ПРЕДПРИЯТИИ &blacktriangledown;</a>
+					<ul>
+						<li><a href= "/about_us/history">ИСТОРИЯ ЗАВОДА</a></li>
+						<li><a href= "/about_us/ekskursii_na_proizvodstvo">	ЭКСКУРСИИ НА ПРОИЗВОДСТВО</a></li>
+					</ul>
+				</li>
+				<li><a href="/catalog">КАТАЛОГ &blacktriangledown;</a>
+					<ul>
+						<li><a href="/catalog/predmety_serv">ПРЕДМЕТЫ СЕРВИРОВКИ</a>
+						</li>
+						<li><a href="/catalog/predmety_int">ПРЕДМЕТЫ ИНТРЕРЬЕРА</a>
+						</li>
+						<li><a href="/catalog/syveniry">СУВЕНИРЫ</a></li>
+					</ul>
+				</li>
+				<li><a href="/shops">ГДЕ КУПИТЬ</a></li>
+				<li><a href="/oplata">ДОСТАВКА И ОПЛАТА</a></li>
+				<li><a href="/contacts">КОНТАКТЫ</a></li>
+
+			</ul>
+        </nav>
+    </header>
+    <form action="" method="post" class="autorization">
+		<h2>Авторизация</h2>
+        {% for cat, msg in get_flashed_messages(True) %}
+		<div class="flash {{ cat }}">{{ msg }}</div>
+		{% endfor %}
+		<p><label>Email:</label> <input type="text" name="email" value="" required /></p>
+        <p><label>Пароль:</label> <input type="password" name="password" value="" required /></p>
+		<p><input type="checkbox" name="remain" style="margin-right: 10px"/>Запомнить меня</p>
+		<p style="text-align: center;"><input type="submit" value="Войти" /></p>
+		<hr align=left width="310px">
+		<p style="text-align: center;"><a href="/register">Зарегистрироваться?</a></p>
+    </form>
+
+    <footer>
+		<section class="footer">
+			<nav>
+				<div class="footer-left">
+					<img width="200" height="46" src="../../static/image/logo-white.svg" alt="Гусевской хрустальный завод">
+					<h4 style="letter-spacing: .1em;">ГУСЕВСКОЙ ХРУСТАЛЬНЫЙ ЗАВОД ИМ. А. МАЛЬЦОВА</h4>
+					<p>8 (800) 551-02-40</p>
+					<p>8 (495) 174-55-57</p>
+					<p>08.30-17.00 (График работы)</p>
+					<p>sales@ghz.ru</p>
+				</div>
+				<div class="footer-right">
+					<a href="/catalog"><h4>Каталог</h4></a>
+					<a href="/catalog/predmety_serv">Предметы сервировки</a>
+					<a href="/catalog/predmety_int">Предметы интерьера</a>
+					<a href="/catalog/syveniry">Сувениры</a>
+				</div>
+				<div class="footer-right">
+					<a href="/about_us"><h4>О предприятии</h4></a>
+					<a href="/about_us/history">История завода</a>
+					<a href="/about_us/ekskursii_na_proizvodstvo">Экскурсии на производство</a>
+				</div>
+				<div class="footer-right">
+					<h4>Помощь и сервисы</h4>
+					<a href="/shops">Где купить</a>
+					<a href="/oplata">Доставка и оплата</a>
+					<a href="/contacts">Контакты</a>
+				</div>
+			</nav>
+		</section>
+	</footer>
+</body>
+</html>

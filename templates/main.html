@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Главаная страница</title>
+	<link rel="stylesheet" href="../../static/styles/menu.css">
+	<link rel="stylesheet" href="../../static/styles/footer.css">
+</head>
+<body  style="background-color: #F9F9F9;">
+	<header>
+
+		<a href="/" class="logo"><img width="200" height="46" src="../../static/image/logotype.svg" alt="Гусевской хрустальный завод"></a>
+		
+		<nav>
+			<ul>
+				<li><a href="/about_us">О ПРЕДПРИЯТИИ &blacktriangledown;</a>
+					<ul>
+						<li><a href= "/about_us/history">ИСТОРИЯ ЗАВОДА</a></li>
+						<li><a href= "/about_us/ekskursii_na_proizvodstvo">	ЭКСКУРСИИ НА ПРОИЗВОДСТВО</a></li>
+					</ul>
+				</li>
+				<li><a href="/catalog">КАТАЛОГ &blacktriangledown;</a>
+					<ul>
+						<li><a href="/catalog/predmety_serv">ПРЕДМЕТЫ СЕРВИРОВКИ</a>
+						</li>
+						<li><a href="/catalog/predmety_int">ПРЕДМЕТЫ ИНТРЕРЬЕРА</a>
+						</li>
+						<li><a href="/catalog/syveniry">СУВЕНИРЫ</a></li>
+					</ul>
+				</li>
+				<li><a href="/shops">ГДЕ КУПИТЬ</a></li>
+				<li><a href="/oplata">ДОСТАВКА И ОПЛАТА</a></li>
+				<li><a href="/contacts">КОНТАКТЫ</a></li>
+
+			</ul>
+		</nav>
+		<nav style="position: relative; float: right;">
+			<ul><li><a href="/autorization">{{ sing_in }}</a></li></ul>
+		</nav>
+	</header>
+
+	<div class="upward" onClick="scrollTopTop()"></div>
+
+	<section style="padding: 50px;">
+		<div  class="main" style="background-image: url(../../static/image/main1.jpg); width: 100%; height: 700px; padding-top: 330px; padding-left: 40px;">
+			<div class="txt" style="background-color: #fff; width: 550px; padding:7px">
+				<h2>Гусевской хрусталь: легенда ручной работы</h2>
+				<p>Гусевской хрустальный завод, который теперь носит имя своего основателя Акима Мальцова, — один из легендарных российских брендов, хорошо известных во всем мире.</p>
+
+				<div class="btn-more" style="margin-top: 35px; margin-bottom: 30px;">
+					<a class="btn" href="/catalog">Перейти в каталог  	 &rarr;</a>
+				</div>
+			</div>			
+		</div>
+
+		<div  class="main" style="background-image: url(../../static/image/main5.jpg); width: 100%; height: 800px; padding-top: 400px; padding-left: 60%; margin-top: 50px;">
+			<div class="txt" style="background-color: #fff; width: 550px; padding:7px">
+				<h2>ГУСЕВСКИЙ ХРУСТАЛЬНЫЙ ЗАВОД ИМ. А. МАЛЬЦОВА</h2>
+				<p>Славная история Гусевского хрустального завода насчитывает несколько веков. Когда-то, в старину, талантливые умельцы создавали сервизы для императорского двора. Их секреты были бережно пронесены сквозь столетия, сохранены и приумножены потомками.</p>
+				<div class="btn-more" style="margin-top: 35px; margin-bottom: 30px;">
+					<a class="btn" href="/about_us/history">История завода &rarr;</a>
+				</div>
+			</div>			
+		</div>
+
+		<div  class="main" style="background-image: url(../../static/image/main3.jpg); width: 100%; height: 800px; padding-top: 430px; padding-left: 40px; margin-top: 50px;">
+			<div class="txt" style="background-color: #fff; width: 550px; padding:7px">
+				<h2>ЭКСКУРСИИ НА ПРОИЗВОДСТВО</h2>
+				<p>Если вы хотите узнать, как варят хрусталь, как выдувают из него замысловатые фигуры, как наносят на них затейливые узоры, увидеть весь процесс - вплоть до упаковки готовых изделий - добро пожаловать к нам на экскурсию.</p>
+
+				<div class="btn-more" style="margin-top: 35px; margin-bottom: 30px;">
+					<a class="btn" href="/about_us/ekskursii_na_proizvodstvo">Записаться на экскурсию &rarr;</a>
+				</div>
+			</div>			
+		</div>
+
+		<div  class="main" style="background-image: url(../../static/image/muzei1.jpg); width: 100%; height: 750px; padding-top: 450px; padding-left: 60%; margin-top: 50px;">
+			<div class="txt" style="background-color: #fff; width: 550px; padding:7px">
+				<h2>КОЛЛЕКЦИЯ РАБОТ МАСТЕРОВ</h2>
+				<p>Лучшие образцы работ, выпущенные на Гусевском заводе начиная с 18 века, можно посмотреть в Музее
+					хрусталя им. Мальцовых, который располагается в залах Георгиевского собора.</p>
+			</div>			
+		</div>
+	</section>
+
+	<div id="overlay">
+    	<div class="popup">
+        	<h2>Здесь могла быть ваша реклама!</h2>
+        	<p>А пока что реклама нас.</p>
+        	<center>
+        		<img src="../../static/image/logo.png">
+        	</center>
+        	<button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+    	</div>
+	</div>
+
+	<script type="text/javascript">
+        var delay_popup = 5000;
+        setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+	</script>
+
+
+	<script>
+		window.addEventListener('scroll', function(){
+			var scroll = document.querySelector('.upward'); scroll.classList.toggle("active", window.scrollY>500)
+		})
+			function scrollTopTop(){
+				window.scrollTo({
+					top:0,
+					behavior: 'smooth'
+				})
+			}
+	</script>
+
+	<footer>
+		<section class="footer">
+			<nav>
+				<div class="footer-left">
+					<img width="200" height="46" src="../../static/image/logo-white.svg" alt="Гусевской хрустальный завод">
+					<h4 style="letter-spacing: .1em;">ГУСЕВСКОЙ ХРУСТАЛЬНЫЙ ЗАВОД ИМ. А. МАЛЬЦОВА</h4>
+					<p>8 (800) 551-02-40</p>
+					<p>8 (495) 174-55-57</p>
+					<p>08.30-17.00 (График работы)</p>
+					<p>sales@ghz.ru</p>
+				</div>
+				<div class="footer-right">
+					<a href="/catalog"><h4>Каталог</h4></a>
+					<a href="/catalog/predmety_serv">Предметы сервировки</a>
+					<a href="/catalog/predmety_int">Предметы интерьера</a>
+					<a href="/catalog/syveniry">Сувениры</a>
+				</div>
+				<div class="footer-right">
+					<a href="/about_us"><h4>О предприятии</h4></a>
+					<a href="/about_us/history">История завода</a>
+					<a href="/about_us/ekskursii_na_proizvodstvo">Экскурсии на производство</a>
+				</div>
+				<div class="footer-right">
+					<h4>Помощь и сервисы</h4>
+					<a href="/shops">Где купить</a>
+					<a href="/oplata">Доставка и оплата</a>
+					<a href="/contacts">Контакты</a>
+				</div>
+			</nav>
+		</section>
+	</footer>
+
+</body>
+</html>

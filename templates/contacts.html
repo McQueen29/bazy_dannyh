@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="../../static/styles/menu.css">
+	<link rel="stylesheet" href="../../static/styles/footer.css">
+	<link rel="stylesheet" href="../../static/styles/contacts.css">
+</head>
+<body style="background-color: #F9F9F9;">
+	<header>
+
+		<a href="../" class="logo"><img width="200" height="46" src="../static/image/logotype.svg" alt="Гусевской хрустальный завод"></a>
+		
+		<nav>
+			<ul>
+				<li><a href="/about_us">О ПРЕДПРИЯТИИ &blacktriangledown;</a>
+					<ul>
+						<li><a href= "/about_us/history">ИСТОРИЯ ЗАВОДА</a></li>
+						<li><a href= "/about_us/ekskursii_na_proizvodstvo">	ЭКСКУРСИИ НА ПРОИЗВОДСТВО</a></li>
+					</ul>
+				</li>
+				<li><a href="/catalog">КАТАЛОГ &blacktriangledown;</a>
+					<ul>
+						<li><a href="/catalog/predmety_serv">ПРЕДМЕТЫ СЕРВИРОВКИ</a>
+						</li>
+						<li><a href="/catalog/predmety_int">ПРЕДМЕТЫ ИНТРЕРЬЕРА</a>
+						</li>
+						<li><a href="/catalog/syveniry">СУВЕНИРЫ</a></li>
+					</ul>
+				</li>
+				<li><a href="/shops">ГДЕ КУПИТЬ</a></li>
+				<li><a href="/oplata">ДОСТАВКА И ОПЛАТА</a></li>
+				<li><a href="/contacts">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+		<nav style="position: relative; float: right;">
+			<ul><li><a href="/autorization">{{ sing_in }}</a></li></ul>
+		</nav>
+	</header>
+
+	<div class="upward" onClick="scrollTopTop()"></div>
+
+	<section style="padding: 50px;" class="contacnts">
+		<h2>КОНТАКТЫ</h2>
+		<p>
+			<strong>Телефон:</strong> 8 (800) 551-02-40, 8 (495) 174-55-57 <br>	
+			<strong>Email:</strong> sales@ghz.ru, online@ghz.ru <br>
+			<strong>График работы отдела продаж:</strong> 08.30-17.00<br>
+			<strong>Адрес:</strong> Владимирская обл., г. Гусь-Хрустальный, ул. Калинина д.28
+		</p>
+
+		<h2>Мы находимся здесь</h2>
+		<center>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa7a9ee6d9b09e59427082ef8bfee9419c018283906f2cf445562c4e42dfb9d2c&amp;width=80%25&amp;height=558&amp;lang=ru_RU&amp;scroll=true"></script>
+		</center>
+	</section>
+
+	<div id="overlay">
+    	<div class="popup">
+        	<h2>Здесь могла быть ваша реклама!</h2>
+        	<p>А пока что реклама нас.</p>
+        	<center>
+        		<img src="../static/image/logo.png">
+        	</center>
+        	<button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+    	</div>
+	</div>
+
+	<script type="text/javascript">
+        var delay_popup = 5000;
+        setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+	</script>
+	
+	<script>
+		window.addEventListener('scroll', function(){
+			var scroll = document.querySelector('.upward'); scroll.classList.toggle("active", window.scrollY>500)
+		})
+			function scrollTopTop(){
+				window.scrollTo({
+					top:0,
+					behavior: 'smooth'
+				})
+			}
+	</script>
+
+	<footer>
+		<section class="footer" style="bottom: 0; left: 0;	width: 100%;">
+			<nav>
+				<div class="footer-left">
+					<img width="200" height="46" src="../static/image/logo-white.svg" alt="Гусевской хрустальный завод">
+					<h4 style="letter-spacing: .1em;">ГУСЕВСКОЙ ХРУСТАЛЬНЫЙ ЗАВОД ИМ. А. МАЛЬЦОВА</h4>
+					<p>8 (800) 551-02-40</p>
+					<p>8 (495) 174-55-57</p>
+					<p>08.30-17.00 (График работы)</p>
+					<p>sales@ghz.ru</p>
+				</div>
+				<div class="footer-right">
+					<a href="/catalog"><h4>Каталог</h4></a>
+					<a href="/catalog/predmety_serv">Предметы сервировки</a>
+					<a href="/catalog/predmety_int">Предметы интерьера</a>
+					<a href="/catalog/syveniry">Сувениры</a>
+				</div>
+				<div class="footer-right">
+					<a href="/about_us"><h4>О предприятии</h4></a>
+					<a href="/about_us/history">История завода</a>
+					<a href="/about_us/ekskursii_na_proizvodstvo">Экскурсии на производство</a>
+				</div>
+				<div class="footer-right">
+					<h4>Помощь и сервисы</h4>
+					<a href="/shops">Где купить</a>
+					<a href="/oplata">Доставка и оплата</a>
+					<a href="/contacts">Контакты</a>
+				</div>
+			</nav>
+		</section>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Экскурсии на производство</title>
+	<link rel="stylesheet" href="../../static/styles/menu.css">
+	<link rel="stylesheet" href="../../static/styles/footer.css">
+	<link rel="stylesheet" href="../../static/styles/ekskursii_na_proizvodstvo.css">
+</head>
+<body style="background-color: #F9F9F9;">
+	<header>
+
+		<a href="../" class="logo"><img width="200" height="46" src="../../static/image/logotype.svg" alt="Гусевской хрустальный завод"></a>
+		
+		<nav>
+			<ul>
+				<li><a href="/about_us">О ПРЕДПРИЯТИИ &blacktriangledown;</a>
+					<ul>
+						<li><a href= "/about_us/history">ИСТОРИЯ ЗАВОДА</a></li>
+						<li><a href= "/about_us/ekskursii_na_proizvodstvo">	ЭКСКУРСИИ НА ПРОИЗВОДСТВО</a></li>
+					</ul>
+				</li>
+				<li><a href="/catalog">КАТАЛОГ &blacktriangledown;</a>
+					<ul>
+						<li><a href="/catalog/predmety_serv">ПРЕДМЕТЫ СЕРВИРОВКИ</a>
+						</li>
+						<li><a href="/catalog/predmety_int">ПРЕДМЕТЫ ИНТРЕРЬЕРА</a>
+						</li>
+						<li><a href="/catalog/syveniry">СУВЕНИРЫ</a></li>
+					</ul>
+				</li>
+				<li><a href="/shops">ГДЕ КУПИТЬ</a></li>
+				<li><a href="/oplata">ДОСТАВКА И ОПЛАТА</a></li>
+				<li><a href="/contacts">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+		<nav style="position: relative; float: right;">
+			<ul><li><a href="/autorization">{{ sing_in }}</a></li></ul>
+		</nav>
+	</header>
+
+	<div class="upward" onClick="scrollTopTop()"></div>
+
+	<div style="padding: 50px;">
+		<div class="ekskursii">
+			<h2>ЭКСКУРСИИ НА ПРОИЗВОДСТВО</h2>
+			<div>
+				<img width="60%" height="500" src="../../static/image/ekskur1.jpg" alt="Фото с экскурии 1">
+				<nav style="margin-left: 40px;">
+					<p>
+						Если вы хотите узнать, как варят хрусталь, как выдувают из него замысловатые фигуры, как наносят на них затейливые узоры, увидеть весь процесс - вплоть до упаковки готовых изделий - добро пожаловать к нам на экскурсию. Путешествие по заводу предусматривает посещение знаменитой образцовой кладовой, где представлены работы художников разных поколений, и фирменного салона-магазина с огромным выбором авторских изделий.
+					</p>
+					<div class="btn-more" style="margin-top: 35px; margin-bottom: 30px;">
+						<a class="btn" href="https://vmuzey.com/museum/gusevskoy-hrustalnyy-zavod-im-malcova">Купить билет  	 &rarr;</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="ekskursii">
+			<div>
+				<p>
+					Экскурсии проводятся ежедневно, кроме выходных, в 10.40 и 12.30. Длительность экскурсий - 1 час 20 минут. Численность группы на сборных экскурсиях - до 20 человек.
+				</p>
+				<img width="50%" height="450" src="../../static/image/ekskur2.jpg" alt="Фото с экскурии 2">
+			</div>
+		</div>
+
+		<div class="ekskursii">
+			<div>
+				<img width="60%" height="500" src="../../static/image/ekskur3.jpg" alt="Фото с экскурии 3">
+				<p>
+					Численность группы на индивидуальных экскурсиях - до 5 человек. Приобрести билеты на индивидуальные экскурсии можно до 20-го числа предшествующего месяца (продажа осуществляется в течение четырёх предшествующих недель). Затем открываются продажи билетов на сборные экскурсии.По вопросам бронирования экскурсий для групп численностью более 20 человек просим обращаться с запросом на почту visit@ghz.ru
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<img width="49%" height="450" src="../../static/image/ekskur4.jpg" alt="Фото с экскурии 4">
+			<img width="49%" height="450" src="../../static/image/ekskur5.jpg" alt="Фото с экскурии 5">
+		</div>		
+	</div>
+
+	<script>
+		window.addEventListener('scroll', function(){
+			var scroll = document.querySelector('.upward'); scroll.classList.toggle("active", window.scrollY>500)
+		})
+			function scrollTopTop(){
+				window.scrollTo({
+					top:0,
+					behavior: 'smooth'
+				})
+			}
+	</script>
+
+	<footer>
+		<section class="footer">
+			<nav>
+				<div class="footer-left">
+					<img width="200" height="46" src="../../static/image/logo-white.svg" alt="Гусевской хрустальный завод">
+					<h4 style="letter-spacing: .1em;">ГУСЕВСКОЙ ХРУСТАЛЬНЫЙ ЗАВОД ИМ. А. МАЛЬЦОВА</h4>
+					<p>8 (800) 551-02-40</p>
+					<p>8 (495) 174-55-57</p>
+					<p>08.30-17.00 (График работы)</p>
+					<p>sales@ghz.ru</p>
+				</div>
+				<div class="footer-right">
+					<a href="/catalog"><h4>Каталог</h4></a>
+					<a href="/catalog/predmety_serv">Предметы сервировки</a>
+					<a href="/catalog/predmety_int">Предметы интерьера</a>
+					<a href="/catalog/syveniry">Сувениры</a>
+				</div>
+				<div class="footer-right">
+					<a href="/about_us"><h4>О предприятии</h4></a>
+					<a href="/about_us/history">История завода</a>
+					<a href="/about_us/ekskursii_na_proizvodstvo">Экскурсии на производство</a>
+				</div>
+				<div class="footer-right">
+					<h4>Помощь и сервисы</h4>
+					<a href="/shops">Где купить</a>
+					<a href="/oplata">Доставка и оплата</a>
+					<a href="/contacts">Контакты</a>
+				</div>
+			</nav>
+		</section>
+	</footer>
+
+</body>
+</html>

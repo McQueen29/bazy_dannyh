@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Предметы интерьера</title>
+	<link rel="stylesheet" href="../../static/styles/menu.css">
+	<link rel="stylesheet" href="../../static/styles/footer.css">
+	<link rel="stylesheet" href="../../static/styles/catalog.css">
+</head>
+<body  style="background-color: #F9F9F9;">
+	<header>
+
+		<a href="../" class="logo"><img width="200" height="46" src="../../static/image/logotype.svg" alt="Гусевской хрустальный завод"></a>
+		
+		<nav>
+			<ul>
+				<li><a href="/about_us">О ПРЕДПРИЯТИИ &blacktriangledown;</a>
+					<ul>
+						<li><a href= "/about_us/history">ИСТОРИЯ ЗАВОДА</a></li>
+						<li><a href= "/about_us/ekskursii_na_proizvodstvo">	ЭКСКУРСИИ НА ПРОИЗВОДСТВО</a></li>
+					</ul>
+				</li>
+				<li><a href="/catalog">КАТАЛОГ &blacktriangledown;</a>
+					<ul>
+						<li><a href="/catalog/predmety_serv">ПРЕДМЕТЫ СЕРВИРОВКИ</a>
+						</li>
+						<li><a href="/catalog/predmety_int">ПРЕДМЕТЫ ИНТРЕРЬЕРА</a>
+						</li>
+						<li><a href="/catalog/syveniry">СУВЕНИРЫ</a></li>
+					</ul>
+				</li>
+				<li><a href="/shops">ГДЕ КУПИТЬ</a></li>
+				<li><a href="/oplata">ДОСТАВКА И ОПЛАТА</a></li>
+				<li><a href="/contacts">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+		<nav style="position: relative; float: right;">
+			<ul><li><a href="/autorization">{{ sing_in }}</a></li></ul>
+		</nav>
+	</header>
+
+	<div class="upward" onClick="scrollTopTop()"></div>
+
+	<section style="padding: 50px;">
+		<h2>ПРЕДМЕТЫ ИНТЕРЬЕРА</h2>
+		<h3>ПОДСВЕЧНИКИ</h3>
+			<div class="catalog">	
+				<div class="card">
+					<img class="card-img" src="{{ catalog[4][1] }}" alt="Товар номер 5">
+					<div class="card-title"><strong>{{ catalog[4][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+							{% if el[0] == catalog[4][4] %}
+								Цвет: {{el[1]}};
+							{% endif %}
+							{% endfor %}
+							{{ catalog[4][6] }}
+							Рисунок алмазной грани: {{ catalog[4][5] }};
+							{% for el in appoint %}
+								{% if el[0] == catalog[4][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="5">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+
+				<div class="card">
+					<img class="card-img" src="{{ catalog[13][1] }}" alt="Товар номер 14">
+					<div class="card-title"><strong>{{ catalog[13][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+							{% if el[0] == catalog[13][4] %}
+								Цвет: {{el[1]}};
+							{% endif %}
+							{% endfor %}
+							{{ catalog[13][6] }}
+							Рисунок алмазной грани: {{ catalog[13][5] }};
+							{% for el in appoint %}
+								{% if el[0] == catalog[13][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="14">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+
+				<div class="card">
+					<img class="card-img" src="{{ catalog[26][1] }}" alt="Товар номер 27">
+					<div class="card-title"><strong>{{ catalog[26][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+								{% if el[0] == catalog[26][4] %}
+									Цвет: {{el[1]}};
+								{% endif %}
+							{% endfor %}
+							{{ catalog[26][6] }}
+							{% for el in appoint %}
+								{% if el[0] == catalog[26][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="27">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+
+				<div class="card">
+					<img class="card-img" src="{{ catalog[27][1] }}" alt="Товар номер 28">
+					<div class="card-title"><strong>{{ catalog[27][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+								{% if el[0] == catalog[27][4] %}
+									Цвет: {{el[1]}};
+								{% endif %}
+							{% endfor %}
+							{{ catalog[27][6] }}
+							{% for el in appoint %}
+								{% if el[0] == catalog[27][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="28">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+			</div>
+			<h3>ВАЗЫ ДЛЯ ЦВЕТОВ</h3>
+			<div class="catalog">
+				<div class="card">
+					<img class="card-img" src="{{ catalog[5][1] }}" alt="Товар номер 6">
+					<div class="card-title"><strong>{{ catalog[5][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+								{% if el[0] == catalog[5][4] %}
+									Цвет: {{el[1]}};
+								{% endif %}
+							{% endfor %}
+							{{ catalog[5][6] }}
+							{% for el in appoint %}
+								{% if el[0] == catalog[5][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="6">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+
+				<div class="card">
+					<img class="card-img" src="{{ catalog[6][1] }}" alt="Товар номер 7">
+					<div class="card-title"><strong>{{ catalog[6][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+								{% if el[0] == catalog[6][4] %}
+									Цвет: {{el[1]}};
+								{% endif %}
+							{% endfor %}
+							{{ catalog[6][6] }}
+							{% for el in appoint %}
+								{% if el[0] == catalog[6][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="7">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+
+				<div class="card">
+					<img class="card-img" src="{{ catalog[28][1] }}" alt="Товар номер 29">
+					<div class="card-title"><strong>{{ catalog[28][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+								{% if el[0] == catalog[28][4] %}
+									Цвет: {{el[1]}};
+								{% endif %}
+							{% endfor %}
+							{{ catalog[28][6] }}
+							{% for el in appoint %}
+								{% if el[0] == catalog[28][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="29">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+
+				<div class="card">
+					<img class="card-img" src="{{ catalog[29][1] }}" alt="Товар номер 30">
+					<div class="card-title"><strong>{{ catalog[29][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+								{% if el[0] == catalog[29][4] %}
+									Цвет: {{el[1]}};
+								{% endif %}
+							{% endfor %}
+							{{ catalog[29][6] }}
+							Рисунок алмазной грани: {{ catalog[29][6] }};
+							{% for el in appoint %}
+								{% if el[0] == catalog[29][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}
+						</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="30">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+			</div>
+			<h3>КАБИНЕТНЫЕ НАБОРЫ</h3>
+			<div class="catalog">
+				<div class="card">
+					<img class="card-img" src="{{ catalog[7][1] }}" alt="Товар номер 8">
+					<div class="card-title"><strong>{{ catalog[7][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+								{% if el[0] == catalog[7][4] %}
+									Цвет: {{el[1]}};
+								{% endif %}
+							{% endfor %}
+							{{ catalog[7][6] }}
+							{% for el in appoint %}
+								{% if el[0] == catalog[7][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="8">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+
+				<div class="card">
+					<img class="card-img" src="{{ catalog[30][1] }}" alt="Товар номер 31">
+					<div class="card-title"><strong>{{ catalog[30][2] }}</strong></div>
+					<div class="card-sub">
+						<p>ХАРАКТЕРИСТИКИ<br>
+							{% for el in color %}
+								{% if el[0] == catalog[30][4] %}
+									Цвет: {{el[1]}};
+								{% endif %}
+							{% endfor %}
+							{{ catalog[30][6] }}
+							Рисунок алмазной грани: {{ catalog[30][6] }};
+							{% for el in appoint %}
+								{% if el[0] == catalog[30][7] %}
+									Назначение: {{el[1]}}
+								{% endif %}
+							{% endfor %}</p>
+					</div>
+					<form action="" method="post" class="buy">
+						<input type="hidden" name="tovar_id" value="31">
+						<p style="text-align: center;"><input type="submit" value="Купить" /></p>
+    				</form>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<script>
+		window.addEventListener('scroll', function(){
+			var scroll = document.querySelector('.upward'); scroll.classList.toggle("active", window.scrollY>500)
+		})
+			function scrollTopTop(){
+				window.scrollTo({
+					top:0,
+					behavior: 'smooth'
+				})
+			}
+	</script>
+
+	<footer>
+		<section class="footer">
+			<nav>
+				<div class="footer-left">
+					<img width="200" height="46" src="../../static/image/logo-white.svg" alt="Гусевской хрустальный завод">
+					<h4 style="letter-spacing: .1em;">ГУСЕВСКОЙ ХРУСТАЛЬНЫЙ ЗАВОД ИМ. А. МАЛЬЦОВА</h4>
+					<p>8 (800) 551-02-40</p>
+					<p>8 (495) 174-55-57</p>
+					<p>08.30-17.00 (График работы)</p>
+					<p>sales@ghz.ru</p>
+				</div>
+				<div class="footer-right">
+					<a href="/catalog"><h4>Каталог</h4></a>
+					<a href="/catalog/predmety_serv">Предметы сервировки</a>
+					<a href="/catalog/predmety_int">Предметы интерьера</a>
+					<a href="/catalog/syveniry">Сувениры</a>
+				</div>
+				<div class="footer-right">
+					<a href="/about_us"><h4>О предприятии</h4></a>
+					<a href="/about_us/history">История завода</a>
+					<a href="/about_us/ekskursii_na_proizvodstvo">Экскурсии на производство</a>
+				</div>
+				<div class="footer-right">
+					<h4>Помощь и сервисы</h4>
+					<a href="/shops">Где купить</a>
+					<a href="/oplata">Доставка и оплата</a>
+					<a href="/contacts">Контакты</a>
+				</div>
+			</nav>
+		</section>
+	</footer>
+
+</body>
+</html>

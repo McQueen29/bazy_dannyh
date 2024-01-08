@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>О предприятии</title>
+	<link rel="stylesheet" href="../../static/styles/menu.css">
+	<link rel="stylesheet" href="../../static/styles/footer.css">
+	<link rel="stylesheet" href="../../static/styles/about_us.css">
+</head>
+<body style="background-color: #F9F9F9;">
+	<header>
+
+		<a href="../" class="logo"><img width="200" height="46" src="../static/image/logotype.svg" alt="Гусевской хрустальный завод"></a>
+		
+		<nav>
+			<ul>
+				<li><a href="/about_us">О ПРЕДПРИЯТИИ &blacktriangledown;</a>
+					<ul>
+						<li><a href= "/about_us/history">ИСТОРИЯ ЗАВОДА</a></li>
+						<li><a href= "/about_us/ekskursii_na_proizvodstvo">	ЭКСКУРСИИ НА ПРОИЗВОДСТВО</a></li>
+					</ul>
+				</li>
+				<li><a href="/catalog">КАТАЛОГ &blacktriangledown;</a>
+					<ul>
+						<li><a href="/catalog/predmety_serv">ПРЕДМЕТЫ СЕРВИРОВКИ</a>
+						</li>
+						<li><a href="/catalog/predmety_int">ПРЕДМЕТЫ ИНТРЕРЬЕРА</a>
+						</li>
+						<li><a href="/catalog/syveniry">СУВЕНИРЫ</a></li>
+					</ul>
+				</li>
+				<li><a href="/shops">ГДЕ КУПИТЬ</a></li>
+				<li><a href="/oplata">ДОСТАВКА И ОПЛАТА</a></li>
+				<li><a href="/contacts">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+		<nav style="position: relative; float: right;">
+			<ul><li><a href="/autorization">{{ sing_in }}</a></li></ul>
+		</nav>
+	</header>
+
+	<div class="upward" onClick="scrollTopTop()"></div>
+
+	<section class="about" style="padding: 50px;">
+		<center>
+			<h2>Гусевской Хрустальный Завод имени Акима Мальцова</h2>
+		</center>
+		<div>
+			<p>
+				Гусевской хрустальный завод имени Мальцова, созданный в 1756 году – ведущий отечественный производитель художественного хрусталя. Секреты старых мастеров здесь не только бережно хранят и передают из поколения в поколение, но и непрерывно развивают с учетом веяний времени. <br>
+				Произведения гусевских мастеров давно завоевали признание специалистов и ценителей декоративно-прикладногоискусства во всем мире. Лучшие работы, представленные на международных выставках, неоднократно получаливысшие награды за оригинальность и самобытность художественных решений, уникальность и виртуозность исполнения, разнообразие форм, цветовой гаммы и декора. О высокой оценке работы предприятия и его заслугах свидетельствует знак Почетного члена Гильдии поставщиков Кремля. <br>
+				Образцы изделий из Гусь-Хрустального находятся в собраниях крупнейших российских музеев – таких как Московский Кремль, Исторический Музей, Государственный Эрмитаж, Музей-заповедник Петергоф. Их можно увидеть и за рубежом – например, в знаменитом Corning Museum of Glass (США), в частных собраниях известных коллекционеров. <br>
+				Привычное нашему взгляду стекло изготавливают путем сплавления кварцевого песка с окислами различных металлов. Для получения хрусталя в стеклянную массу добавляют свинец. От обычного стекла хрусталь отличается более сильным блеском и высоким коэффициентом преломления света, благодаря чему играет всеми цветами радуги. Удивительное свойство хрусталя в том, что он, сохраняя особую прочность, поддается огранке. Содержание свинца в изделиях Гусевского хрустального завода составляет 24 %. <br>
+				Использование окислов редкоземельных металлов позволяет добиться впечатляющего многообразия оттенков цветовой гаммы (коньячный, розовый, сиреневый, бирюзовый, желтый, дымчатый могут быть и более, и менее насыщенными). Особенно эффектно цветной хрусталь выглядит в изделиях с применением технологии наклада (двухслойный хрусталь). <br>
+			</p>
+			<img src="../static/image/logo.png" width="30%" height="500px" alt="Логотип" style="margin-left: 5%;">
+		</div>
+	</section>
+
+	<script>
+		window.addEventListener('scroll', function(){
+			var scroll = document.querySelector('.upward'); scroll.classList.toggle("active", window.scrollY>500)
+		})
+			function scrollTopTop(){
+				window.scrollTo({
+					top:0,
+					behavior: 'smooth'
+				})
+			}
+	</script>
+
+	<footer>
+		<section class="footer">
+			<nav>
+				<div class="footer-left">
+					<img width="200" height="46" src="../static/image/logo-white.svg" alt="Гусевской хрустальный завод">
+					<h4 style="letter-spacing: .1em;">ГУСЕВСКОЙ ХРУСТАЛЬНЫЙ ЗАВОД ИМ. А. МАЛЬЦОВА</h4>
+					<p>8 (800) 551-02-40</p>
+					<p>8 (495) 174-55-57</p>
+					<p>08.30-17.00 (График работы)</p>
+					<p>sales@ghz.ru</p>
+				</div>
+				<div class="footer-right">
+					<a href="/catalog"><h4>Каталог</h4></a>
+					<a href="/catalog/predmety_serv">Предметы сервировки</a>
+					<a href="/catalog/predmety_int">Предметы интерьера</a>
+					<a href="/catalog/syveniry">Сувениры</a>
+				</div>
+				<div class="footer-right">
+					<a href="/about_us"><h4>О предприятии</h4></a>
+					<a href="/about_us/history">История завода</a>
+					<a href="/about_us/ekskursii_na_proizvodstvo">Экскурсии на производство</a>
+				</div>
+				<div class="footer-right">
+					<h4>Помощь и сервисы</h4>
+					<a href="/shops">Где купить</a>
+					<a href="/oplata">Доставка и оплата</a>
+					<a href="/contacts">Контакты</a>
+				</div>
+			</nav>
+		</section>
+	</footer>
+
+</body>
+</html>
