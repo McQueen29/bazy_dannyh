@@ -1,0 +1,21 @@
+.contacnts h2{
+	font-size: 2.5rem;
+    line-height: 3.375rem;
+    font-family: "Cormorant",serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.contacnts p{
+	font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    width: 450px;
+    margin-left: 400px;
+}

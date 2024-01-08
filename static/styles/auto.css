@@ -1,0 +1,63 @@
+/* Стили для формы */
+        .autorization {
+            width: 310px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+
+        .autorization h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Стили для параграфов внутри формы */
+        .autorization p {
+            margin: 10px 0;
+        }
+
+        /* Стили для меток (label) */
+        .autorization label {
+            display: inline-block;
+            width: 120px;
+            text-align: left;
+        }
+
+        /* Стили для текстовых полей ввода */
+        .autorization input[type="text"],
+        .autorization input[type="password"] {
+            width: 180px;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        /* Стили для кнопки отправки */
+        .autorization input[type="submit"] {
+            width: 200px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Стили для кнопки при наведении */
+        .autorization input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .flash {padding:10px;}
+        .flash.success{
+            border: 1px solid #21DB56;
+            background: #AEFFC5;
+        }
+
+        .flash.error{
+            border: 1px solid #FF4343;
+            background: #FF9C9C;
+        }

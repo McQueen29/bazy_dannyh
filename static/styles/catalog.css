@@ -1,0 +1,97 @@
+section h2{
+	font-size: 2.5rem;
+    line-height: 3.375rem;
+    font-family: "Cormorant",serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+section h3{
+    font-family: "Cormorant",serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-img {
+    width: 360px;
+    height: 360px;
+}
+
+.card {
+    background: #fff;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.catalog {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: repeat(auto-fit, auto);
+    padding-left: 80px;
+}
+
+.card-title {
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
+    height: 30px;
+}
+
+.card-sub {
+    margin-top: 20px;
+    height: 175px;
+}
+
+.card-sub p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: white;
+    padding: 30px 60px;
+    text-decoration: none;
+    color: #000;
+    border: thin solid black;
+}
+
+.btn:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.btn-more {
+    margin: auto;
+}
+
+/* Стили для кнопки отправки */
+        .buy input[type="submit"] {
+            width: 200px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Стили для кнопки при наведении */
+        .buy input[type="submit"]:hover {
+            background-color: #45a049;
+        }

@@ -1,0 +1,48 @@
+.footer{
+	background-color: #333333;
+	background-position: center;
+	background-size: cover;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 2rem 0;
+	align-items: center;
+	height: 300px;
+}
+
+.footer h4{
+	color: #fff;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+.footer p{
+	color: #fff;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.footer-left {
+	width: 24%;
+	margin-right: 7%;
+}
+
+.footer-right{
+	width: 23%;
+}
+
+.footer-right a {
+	color: #fff;
+	display: flex;
+    flex-flow: column wrap;
+    line-height: 2;
+}
+
+footer section nav div {
+	float: left;
+}
+
+footer section nav{
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}

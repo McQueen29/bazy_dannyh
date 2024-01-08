@@ -1,0 +1,43 @@
+.pict_with_text span{
+    style="display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    margin-bottom: 50px;
+}
+
+.pict_with_text p {
+    font-size: 1rem; 
+    line-height: 1.75rem; 
+    letter-spacing: .1em; 
+    margin-bottom: 1rem; 
+    margin: auto;
+    width: auto;
+}
+
+.history h2{
+    font-size: 2.5rem;
+    line-height: 3.375rem;
+    font-family: "Cormorant",serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.history div{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.history p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    width: 450px;
+    margin: auto;
+}
