@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Доставка и оплата</title>
+	<link rel="stylesheet" href="../../static/styles/menu.css">
+	<link rel="stylesheet" href="../../static/styles/footer.css">
+	<link rel="stylesheet" href="../../static/styles/oplata.css">
+</head>
+<body>
+	<header>
+
+		<a href="../" class="logo"><img width="200" height="46" src="../static/image/logotype.svg" alt="Гусевской хрустальный завод"></a>
+		
+		<nav>
+			<ul>
+				<li><a href="/about_us">О ПРЕДПРИЯТИИ &blacktriangledown;</a>
+					<ul>
+						<li><a href= "/about_us/history">ИСТОРИЯ ЗАВОДА</a></li>
+						<li><a href= "/about_us/ekskursii_na_proizvodstvo">	ЭКСКУРСИИ НА ПРОИЗВОДСТВО</a></li>
+					</ul>
+				</li>
+				<li><a href="/catalog">КАТАЛОГ &blacktriangledown;</a>
+					<ul>
+						<li><a href="/catalog/predmety_serv">ПРЕДМЕТЫ СЕРВИРОВКИ</a>
+						</li>
+						<li><a href="/catalog/predmety_int">ПРЕДМЕТЫ ИНТРЕРЬЕРА</a>
+						</li>
+						<li><a href="/catalog/syveniry">СУВЕНИРЫ</a></li>
+					</ul>
+				</li>
+				<li><a href="/shops">ГДЕ КУПИТЬ</a></li>
+				<li><a href="/oplata">ДОСТАВКА И ОПЛАТА</a></li>
+				<li><a href="/contacts">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+		<nav style="position: relative; float: right;">
+			<ul><li><a href="/autorization">{{ sing_in }}</a></li></ul>
+		</nav>
+	</header>
+
+	<div class="upward" onClick="scrollTopTop()"></div>
+
+	<section style="background-color: #F9F9F9; padding: 50px;" class="oplata">
+		<h2>ДОСТАВКА ПО РОССИИ</h2>
+		<div>
+			<p>
+				Время доставки согласовывается интернет-магазином с менеджером службы доставки и зависит от удаленности региона. Стоимость расчитывается службой доставки исходя из габаритов посылки.<br>ВНИМАНИЕ! Неправильно указанный номер телефона, неточный или неполный адрес могут привести к дополнительной задержке! Пожалуйста, внимательно проверяйте ваши персональные данные при регистрации и оформлении заказа. Конфиденциальность ваших регистрационных данных гарантируется.
+			</p>
+			<img width="20%" height="200" src="../static/image/map-russia.png" alt="Карта РОССИИ">
+		</div>
+		<h2>СПОСОБЫ ОПЛАТЫ</h2>
+		<div>
+		<p>
+			<strong>Банковской картой</strong><br>
+			Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку «Оплата заказа банковской картой». Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем: МИР, Visa International, Mastercard Worldwide, JCB.
+		</p>
+		<img width="20%" height="200" src="../static/image/Visa_Mast_Mir.png" alt="Логотипы виза мастеркард мир">
+		</div>
+		<div>
+			<p>
+				<strong>Банковским переводом</strong><br>
+				Вы можете произвести предоплату заказа банковским переводом. Этот способ оплаты возможен по Вашему желанию при любой сумме заказа - пожалуйста, сообщите об этом менеджеру интернет-магазина, когда он свяжется с Вами для подтверждения заказа.
+			</p>
+			<img width="17%" height="200" src="../static/image/money.png" alt="Логотипы виза мастеркард мир">
+		</div>
+		<p>
+			<strong>Описание процесса передачи данных</strong><br>
+			Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО СБЕРБАНК. Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет- платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения платежа также может потребоваться ввод специального пароля.
+		</p>
+		<p>
+			Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введённая информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР, Visa Int., MasterCard Europe Sprl, JCB.
+		</p>
+	</section>
+
+	<script>
+		window.addEventListener('scroll', function(){
+			var scroll = document.querySelector('.upward'); scroll.classList.toggle("active", window.scrollY>500)
+		})
+			function scrollTopTop(){
+				window.scrollTo({
+					top:0,
+					behavior: 'smooth'
+				})
+			}
+	</script>
+
+	<footer>
+		<section class="footer">
+			<nav>
+				<div class="footer-left">
+					<img width="200" height="46" src="../static/image/logo-white.svg" alt="Гусевской хрустальный завод">
+					<h4 style="letter-spacing: .1em;">ГУСЕВСКОЙ ХРУСТАЛЬНЫЙ ЗАВОД ИМ. А. МАЛЬЦОВА</h4>
+					<p>8 (800) 551-02-40</p>
+					<p>8 (495) 174-55-57</p>
+					<p>08.30-17.00 (График работы)</p>
+					<p>sales@ghz.ru</p>
+				</div>
+				<div class="footer-right">
+					<a href="/catalog"><h4>Каталог</h4></a>
+					<a href="/catalog/predmety_serv">Предметы сервировки</a>
+					<a href="/catalog/predmety_int">Предметы интерьера</a>
+					<a href="/catalog/syveniry">Сувениры</a>
+				</div>
+				<div class="footer-right">
+					<a href="/about_us"><h4>О предприятии</h4></a>
+					<a href="/about_us/history">История завода</a>
+					<a href="/about_us/ekskursii_na_proizvodstvo">Экскурсии на производство</a>
+				</div>
+				<div class="footer-right">
+					<h4>Помощь и сервисы</h4>
+					<a href="/shops">Где купить</a>
+					<a href="/oplata">Доставка и оплата</a>
+					<a href="/contacts">Контакты</a>
+				</div>
+			</nav>
+		</section>
+	</footer>
+
+</body>
+</html>
